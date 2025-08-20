@@ -10,11 +10,7 @@ textarea { resize: vertical; } .section { margin-bottom:28px; } .row { display:g
 @media (max-width:720px){ .row{ grid-template-columns:1fr; } }
 button[type="submit"]{ background:var(--quirk-green); color:#fff; border:none; padding:14px 24px; font-size:16px; border-radius:8px; cursor:pointer; display:block; margin:20px auto 0 auto; }
 button[type="submit"]:hover { background:var(--quirk-green-dark); } button[disabled] { opacity:.6; cursor:not-allowed; }
-@media (max-width:640px){ button[type="submit") { width:100%; } }
-.agreement-card { background:#f9fbf9; border:1px solid #d9efe4; border-left:6px solid var(--quirk-green); border-radius:10px; padding:14px; }
-.disclaimer { font-size:15px; color:#18352c; margin:0; font-weight:600; }
-.checkbox-row { display:flex; align-items:center; justify-content:center; gap:10px; margin-top:12px; }
-.checkbox-row input[type="checkbox"]{ width:22px; height:22px; min-width:22px; accent-color: var(--quirk-green); cursor:pointer; }
+@media (max-width:640px){ button[type="submit") { width:100%; } }.agreement-card { background:#f9fbf9; border:1px solid #d9efe4; border-left:6px solid var(--quirk-green); border-radius:10px; padding:14px; }.disclaimer { font-size:15px; color:#18352c; margin:0; font-weight:600; }.checkbox-row { display:flex; align-items:center; justify-content:center; gap:10px; margin-top:12px; }.checkbox-row input[type="checkbox"]{ width:22px; height:22px; min-width:22px; accent-color: var(--quirk-green); cursor:pointer; }
 .checkbox-row label{ margin:0; font-weight:700; color:#0d3a2c; cursor:pointer; }
 .header-title { display:flex; align-items:center; justify-content:center; gap:12px; margin-bottom:8px; } .header-logo-icon { width:40px; height:40px; flex-shrink:0; }
 .utilitybar { display:flex; justify-content:space-between; gap:10px; align-items:center; margin: 6px 0 14px; }
@@ -27,10 +23,11 @@ button[type="submit"]:hover { background:var(--quirk-green-dark); } button[disab
 .thumb { position:relative; border:1px solid #e3e7e5; border-radius:8px; overflow:hidden; } .thumb img { width:100%; height:70px; object-fit:cover; display:block; } .thumb .meta { font-size:11px; padding:4px; text-align:center; }
 .smallprint { text-align:center; font-size:12px; color:#6b6b6b; margin-top:16px; }
 
-/* Branding placement */
-.branding{display:flex;justify-content:center;margin:8px 0 10px;}
-.logo{height:60px;width:auto;}
-@media (max-width:420px){.logo{height:48px;}}
+/* Ensure Spanish toggle sits at far right of utility bar */
+.utilitybar #langToggle{ margin-left:auto; }
 
-/* Spanish toggle align right */
-.utilitybar #langToggle{margin-left:auto;}
+/* Style for the new centered SVG */
+.centered-svg-container {
+  text-align: center;
+  margin-bottom: 16px;
+}
