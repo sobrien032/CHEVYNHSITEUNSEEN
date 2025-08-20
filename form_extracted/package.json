@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "scripts": {
+    "preview": "node dev-server.js"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.0"
+  }
+}
